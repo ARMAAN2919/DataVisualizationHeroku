@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Using slick slider to change years  -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <script type="text/javascript" src="../static/d3/d3.v4.js"></script>
+  <title>Age when completed Education</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+      <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+
+        <a class="navbar-brand" href="/"> <img src="../static/assets/EduLogo.png" alt="logo" class="logo"></a>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="aLevels">ALevels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gsce">GSCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="keystage">KeyStage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="language">Language</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="international">International</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workingage">NVQ4+</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="text">
+    <h1>Age when Completed Continuous Full-time Education in London</h1>
+  </div>
+
+  <!-- Function for radial charts -->
+  <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
+
+  <!-- <form>
+    <label for="year">Please select a year: </label>
+    <input type="range" min=2008 max=2018 step=1 id="chart" value=2008 oninput="selected_year.value = chart.value">
+    <output name="selected_year" id="selected_year">2008</output>
+</form> -->
+
+  Select Age
+  <select id="age">
+    <option value="16" selected="selected">16 or under & 17-19</option>
+    <option value="20">20-23 & 24+</option>
+    <option value="NA">Still in education & Never had education</option>
+  </select>
+
+  <div class="slick-carousel">
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2008</p>
+      </div>
+      <div id="chart-2008"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2009</p>
+      </div>
+      <div id="chart-2009"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2010</p>
+      </div>
+      <div id="chart-2010"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2011</p>
+      </div>
+      <div id="chart-2011"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2012</p>
+      </div>
+      <div id="chart-2012"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2013</p>
+      </div>
+      <div id="chart-2013"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2014</p>
+      </div>
+      <div id="chart-2014"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2015</p>
+      </div>
+      <div id="chart-2015"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2016</p>
+      </div>
+      <div id="chart-2016"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2017</p>
+      </div>
+      <div id="chart-2017"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2018</p>
+      </div>
+      <div id="chart-2018"></div>
+    </div>
+
+  </div>
+
+  <!-- Using slick slider to change years  -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript" src="../static/d3/education.js"></script>
+
+</body>
+
+</html>

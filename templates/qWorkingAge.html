@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <script type="text/javascript" src="../static/d3/d3.v4.js"></script>
+  <title>Working Age</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+      <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+
+        <a class="navbar-brand" href="/"> <img src="../static/assets/EduLogo.png" alt="logo" class="logo"></a>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="aLevels">ALevels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gsce">GSCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="keystage">KeyStage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="language">Language</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="international">International</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workingage">NVQ4+</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  </header>
+
+  <div class="text">
+    <h1>25-64 Aged People with NVQ4+ in London and UK</h1>
+  </div>
+
+  <div id="tooltip">
+    <p><strong></strong>
+    </p>
+    <p><span id="value">100</span>%</p>
+  </div>
+
+  Select Area
+  <select id="area"></select>
+
+  <div id="q_working_age">
+    <!-- <button onclick="PlotGraph('Barking and Dagenham')">Barking and Dagenham</button>
+    <button onclick="PlotGraph('Barnet')">Barnet</button>
+    <button onclick="PlotGraph('Bexley')">Bexley</button> -->
+  </div>
+
+  <!-- Color -->
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+  <script type="text/javascript" src="../static/d3/qualiWorkAge.js"></script>
+
+
+
+  </div>
+
+</body>
+
+</html>

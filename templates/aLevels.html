@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <!-- <script type="text/javascript" src="../static/d3/d3.v4.js"></script> -->
+    
+    <title>A-Levels</title>
+    <style>
+        .barchart {
+    fill: #9e9ac8
+  }
+  </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg sticky-top">
+
+            <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapse_target">
+
+                <a class="navbar-brand" href="/"> <img src="../static/assets/EduLogo.png" alt="logo" class="logo"></a>
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="aLevels">ALevels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gsce">GSCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="keystage">KeyStage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="language">Language</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="international">International</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="workingage">NVQ4+</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education">Education</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="text">
+        <h1>A-levels Results by Borough</h1>
+    </div>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <!-- <li class="nav-item">
+        <a class="nav-link active" id="2004" data-toggle="tab" href="#2004graph" role="tab" aria-controls="2004graph" aria-selected="true">2004</a>  
+      </li> -->
+        <li class="nav-item">
+            <a class="nav-link active" id="2005" data-toggle="tab" href="#2005graph" role="tab" aria-controls="2005graph"
+                aria-selected="true">2005</a>
+
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2006" data-toggle="tab" href="#2006graph" role="tab" aria-controls="2006graph"
+                aria-selected="false">2006</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2007" data-toggle="tab" href="#2007graph" role="tab" aria-controls="2007graph"
+                aria-selected="false">2007</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2008" data-toggle="tab" href="#2008graph" role="tab" aria-controls="2008graph"
+                aria-selected="false">2008</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2009" data-toggle="tab" href="#2009graph" role="tab" aria-controls="2009graph"
+                aria-selected="false">2009</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2010" data-toggle="tab" href="#2010graph" role="tab" aria-controls="2010graph"
+                aria-selected="false">2010</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2011" data-toggle="tab" href="#2011graph" role="tab" aria-controls="2011graph"
+                aria-selected="false">2011</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2012" data-toggle="tab" href="#2012graph" role="tab" aria-controls="2012graph"
+                aria-selected="false">2012</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="2013" data-toggle="tab" href="#2013graph" role="tab" aria-controls="2013graph"
+                aria-selected="false">2013</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <!-- <div class="tab-pane fade show active" id="2004graph" role="tabpanel" aria-labelledby="2004">
+        <div id="chart-2004"></div>
+      </div> -->
+        <div class="tab-pane fade show active" id="2005graph" role="tabpanel" aria-labelledby="2005">
+            <div id="chart-2005"></div>
+        </div>
+        <div class="tab-pane fade" id="2006graph" role="tabpanel" aria-labelledby="2006">
+            <div id="chart-2006"></div>
+        </div>
+        <div class="tab-pane fade" id="2007graph" role="tabpanel" aria-labelledby="2007">
+            <div id="chart-2007"></div>
+        </div>
+        <div class="tab-pane fade" id="2008graph" role="tabpanel" aria-labelledby="2008">
+            <div id="chart-2008"></div>
+        </div>
+        <div class="tab-pane fade" id="2009graph" role="tabpanel" aria-labelledby="2009">
+            <div id="chart-2009"></div>
+        </div>
+        <div class="tab-pane fade" id="2010graph" role="tabpanel" aria-labelledby="2010">
+            <div id="chart-2010"></div>
+        </div>
+        <div class="tab-pane fade" id="2011graph" role="tabpanel" aria-labelledby="2011">
+            <div id="chart-2011"></div>
+        </div>
+        <div class="tab-pane fade" id="2012graph" role="tabpanel" aria-labelledby="2012">
+            <div id="chart-2012"></div>
+        </div>
+        <div class="tab-pane fade" id="2013graph" role="tabpanel" aria-labelledby="2013">
+            <div id="chart-2013"></div>
+        </div>
+
+    </div>
+
+    <!-- Vertical Graph showing addtional A level results  -->
+    <div id="additionaldata" class="graphdata">
+    </div>
+
+    <!-- For color of graph and scale  -->
+    <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+    <!-- Libraries to use for geo graph -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+
+    <script type="text/javascript" src="../static/d3/aLevels.js"></script>
+
+    <!-- Function to switch years -->
+    <script>
+        $(function () {
+
+            $('.nav-link').click(function () {
+                $('.tab-content').find('.active').removeClass('active');
+                $('.tab-content').find('.show').removeClass('show');
+                var id = $(this).attr('href');
+                $(id).addClass('active');
+                $(id).addClass('show');
+            })
+        })
+    </script>
+
+</body>
+
+</html>

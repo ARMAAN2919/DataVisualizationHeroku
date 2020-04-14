@@ -1,0 +1,130 @@
+Year,Area,%_Pupils_Entered,%_Pupils_Passed
+2015,Barking and Dagenham,98.1,60
+2015,Barnet,97.6,73.1
+2015,Bexley,98.2,66.5
+2015,Brent,97,63.8
+2015,Bromley,97.2,72.2
+2015,Camden,96.1,63.1
+2015,Croydon,94.6,60.6
+2015,Ealing,95.5,65
+2015,Enfield,96.5,62.9
+2015,Greenwich,96.6,60.8
+2015,Hackney,96.2,69.7
+2015,Hammersmith and Fulham,96.5,70.1
+2015,Haringey,96,63.7
+2015,Harrow,97.2,67.7
+2015,Havering,96.9,64
+2015,Hillingdon,97.7,65.3
+2015,Hounslow,94.2,65.7
+2015,Islington,98,64.2
+2015,Kensington and Chelsea,98.5,75.5
+2015,Kingston upon Thames,97.8,78.2
+2015,Lambeth,96.3,62.4
+2015,Lewisham,95.5,56.2
+2015,Merton,96.5,69.5
+2015,Newham,97.4,63.1
+2015,Redbridge,97.5,71.8
+2015,Richmond upon Thames,97.8,71.3
+2015,Southwark,97.3,69.3
+2015,Sutton,98.6,76.8
+2015,Tower Hamlets,95.4,63.3
+2015,Waltham Forest,96.8,63.6
+2015,Wandsworth,95.1,69.6
+2015,Westminster,98.6,71.6
+2015,Inner London,96.6,65.4
+2015,Outer London,96.9,67
+2015,North East,96.4,61.6
+2015,North West,97,61.7
+2015,Yorkshire and the Humber,97.1,60.9
+2015,East Midlands,97.1,61.6
+2015,West Midlands,97.2,60.3
+2015,East,97.2,64
+2015,London,96.8,66.4
+2015,South East,96.9,65.8
+2015,South West,97.2,64
+2016,Barking and Dagenham,97.8,63.6
+2016,Barnet,96.8,77.8
+2016,Bexley,97.7,67.6
+2016,Brent,96.8,67.4
+2016,Bromley,95.9,70.7
+2016,Camden,96.4,67.2
+2016,Croydon,95.4,60.9
+2016,Ealing,97.1,70.5
+2016,Enfield,97.2,61.6
+2016,Greenwich,97.5,62.7
+2016,Hackney,96.6,66.6
+2016,Hammersmith and Fulham,94.7,70.2
+2016,Haringey,95.3,63.1
+2016,Harrow,98.1,70.2
+2016,Havering,97.9,68.3
+2016,Hillingdon,96.7,66.8
+2016,Hounslow,92.7,68.5
+2016,Islington,97.2,63.9
+2016,Kensington and Chelsea,97.3,76.7
+2016,Kingston upon Thames,96.3,78.2
+2016,Lambeth,94.8,60.2
+2016,Lewisham,96,58.7
+2016,Merton,96.3,69.7
+2016,Newham,97.1,65.2
+2016,Redbridge,97.9,73.2
+2016,Richmond upon Thames,97.2,76.1
+2016,Southwark,97.4,68.4
+2016,Sutton,98.4,78
+2016,Tower Hamlets,95.7,65.2
+2016,Waltham Forest,96.7,63.1
+2016,Wandsworth,95.9,70.9
+2016,Westminster,98,74.7
+2016,Inner London,96.3,66.1
+2016,Outer London,96.8,68.9
+2016,North East,96.2,59.9
+2016,North West,97.2,62.7
+2016,Yorkshire and the Humber,97.2,61.8
+2016,East Midlands,97.3,63.1
+2016,West Midlands,96.8,61.2
+2016,East,97.2,65.5
+2016,London,96.7,67.9
+2016,South East,96.6,66.5
+2016,South West,96.7,64.1
+2017,Barking and Dagenham,98,60
+2017,Barnet,97.9,76.2
+2017,Bexley,97.5,69.3
+2017,Brent,97.6,69.7
+2017,Bromley,96.3,70.1
+2017,Camden,97,66.2
+2017,Croydon,95.6,63.4
+2017,Ealing,97.2,69.4
+2017,Enfield,97.1,61.4
+2017,Greenwich,96.5,58.5
+2017,Hackney,97.3,67.6
+2017,Hammersmith and Fulham,95.5,70.7
+2017,Haringey,95.3,62.1
+2017,Harrow,97,68.9
+2017,Havering,96.8,67.8
+2017,Hillingdon,96.4,67
+2017,Hounslow,94.9,68.9
+2017,Islington,95.6,64.1
+2017,Kensington and Chelsea,97.4,73.7
+2017,Kingston upon Thames,97.9,79.3
+2017,Lambeth,96.3,59.8
+2017,Lewisham,96.5,60.9
+2017,Merton,96.9,68.3
+2017,Newham,96.7,65.6
+2017,Redbridge,98,74.4
+2017,Richmond upon Thames,97.1,71.7
+2017,Southwark,97.4,68.5
+2017,Sutton,98.3,79.7
+2017,Tower Hamlets,95.8,64.3
+2017,Waltham Forest,96.7,63.3
+2017,Wandsworth,95,71.7
+2017,Westminster,98.3,73.8
+2017,Inner London,96.4,66.1
+2017,Outer London,97,68.8
+2017,North East,96.2,62.2
+2017,North West,97.1,62.9
+2017,Yorkshire and the Humber,97.3,62.4
+2017,East Midlands,97.3,63.3
+2017,West Midlands,97,60.9
+2017,East,97.2,65.3
+2017,London,96.8,67.9
+2017,South East,97,66.7
+2017,South West,97.2,65
