@@ -8,3 +8,10 @@
 [2020-04-14 15:50:26 +0100] [61553] [INFO] Handling signal: int
 [2020-04-14 15:50:26 +0100] [61638] [INFO] Worker exiting (pid: 61638)
 [2020-04-14 15:50:26 +0100] [61553] [INFO] Shutting down: Master
+[2020-04-14 15:51:01 +0100] [61739] [INFO] Starting gunicorn 20.0.4
+[2020-04-14 15:51:01 +0100] [61739] [INFO] Listening at: http://0.0.0.0:5000 (61739)
+[2020-04-14 15:51:01 +0100] [61739] [INFO] Using worker: sync
+[2020-04-14 15:51:01 +0100] [61742] [INFO] Booting worker with pid: 61742
+[2020-04-14 15:51:09 +0100] [61739] [INFO] Handling signal: int
+[2020-04-14 15:51:09 +0100] [61742] [INFO] Worker exiting (pid: 61742)
+[2020-04-14 15:51:09 +0100] [61739] [INFO] Shutting down: Master
