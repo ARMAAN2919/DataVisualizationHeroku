@@ -1,0 +1,10 @@
+[2020-04-14 15:49:39 +0100] [61553] [INFO] Starting gunicorn 20.0.4
+[2020-04-14 15:49:39 +0100] [61553] [INFO] Listening at: http://0.0.0.0:5000 (61553)
+[2020-04-14 15:49:39 +0100] [61553] [INFO] Using worker: sync
+[2020-04-14 15:49:39 +0100] [61556] [INFO] Booting worker with pid: 61556
+[2020-04-14 15:50:24 +0100] [61553] [CRITICAL] WORKER TIMEOUT (pid:61556)
+[2020-04-14 15:50:24 +0100] [61556] [INFO] Worker exiting (pid: 61556)
+[2020-04-14 15:50:25 +0100] [61638] [INFO] Booting worker with pid: 61638
+[2020-04-14 15:50:26 +0100] [61553] [INFO] Handling signal: int
+[2020-04-14 15:50:26 +0100] [61638] [INFO] Worker exiting (pid: 61638)
+[2020-04-14 15:50:26 +0100] [61553] [INFO] Shutting down: Master
