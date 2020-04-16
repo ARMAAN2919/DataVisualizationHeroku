@@ -10,6 +10,12 @@ body {
   font-size: 17px;
 }
 
+.homepage {
+  text-align: right;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
 header {
     background: #fff;
     border-bottom: 2px solid #999;
