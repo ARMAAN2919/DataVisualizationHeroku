@@ -23,7 +23,7 @@
 <body>
 
   <header>
-
+    <!-- nav bar adapted from bootstrap documentation -->
     <nav class="navbar navbar-expand-lg sticky-top">
 
       <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
@@ -40,7 +40,7 @@
             <a class="nav-link" href="aLevels">ALevels</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gsce">GSCE</a>
+            <a class="nav-link" href="gcse">GCSE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="keystage">KeyStage</a>
@@ -68,11 +68,25 @@
     <h1>25-64 Aged People with NVQ4+ in London and UK</h1>
   </div>
 
+
+  <aside>
+    <div class="description-nvq">
+      <p align="justify" style="font-size:1.5vw;"> The pie chart is slightly different from something you might have come across. It shows the
+        percentage of people in the age group 25-65 who have an NVQ4+ qualification or higher. NVQ4+ is at least
+        achieving either a diploma, foundations degree, bachelors degree and other qualifications or better. The
+        boroughs can be chosen from the options menu, and it can also be sorted as England/UK as a whole.
+      </p>
+    </div>
+  </aside>
+  <!-- tooltip method on html adapted from Xavier Polo on jsfiddle  -->
+
   <div id="tooltip">
     <p><strong></strong>
     </p>
     <p><span id="value">100</span>%</p>
   </div>
+
+  <!-- select tag learnt from w3 -->
 
   Select Area
   <select id="area"></select>
@@ -87,7 +101,6 @@
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
   <script type="text/javascript" src="../static/d3/qualiWorkAge.js"></script>
-
 
 
   </div>

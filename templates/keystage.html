@@ -25,7 +25,7 @@
 <body>
 
   <header>
-
+    <!-- nav bar adapted from bootstrap documentation -->
     <nav class="navbar navbar-expand-lg sticky-top">
 
       <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
@@ -42,7 +42,7 @@
             <a class="nav-link" href="aLevels">ALevels</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="gsce">GSCE</a>
+            <a class="nav-link" href="gcse">GCSE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="keystage">KeyStage</a>
@@ -66,15 +66,33 @@
 
   </header>
 
+
+  <aside>
+    <div class="description-ks">
+      <p align="justify">Key stage results 1 and 2 are stages just for primary school students. The graphs present the
+        percentage of students that have passed in four distinct subjects for stage 1 and three subjects for stage 2.
+        These are Reading, Writing, Mathematics and Science (KS1). The options bar is used to switch between the two
+        stages and the buttons for years. The boroughs are split into two halves, sorted by alphabetical order. The
+        button will change the figure and present the information for the new boroughs accordingly.
+      </p>
+    </div>
+  </aside>
+
   <div class="text">
     <h1>Key Stage Results in London</h1>
   </div>
+
+  
+
+  <!-- select tag learnt from w3 -->
 
   Select Key Stage
   <select id="ks">
     <option value="ks1" selected="selected">KS1</option>
     <option value="ks2">KS2</option>
   </select>
+
+  <!-- carousel learnt from Slick, buttons onclick from w3 -->
 
   <div class="slick-carousel">
     <div class="slider">

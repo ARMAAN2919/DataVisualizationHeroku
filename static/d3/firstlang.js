@@ -8,10 +8,11 @@ function PlotGraph(year, type) { // function for slider to change years and betw
     height = 500
     margin = 40
 
-    // radius of pie chart
+    // radius of pie chart, equation used from d3 graph gallery
     var radius = Math.min(width, height) / 2 - margin
     $(divId).find('svg').remove();
 
+    // changed and adapted from d3 graph gallery
     var svgOrig = d3.select(divId)
         .append("svg")
         .attr("width", width)
@@ -48,10 +49,15 @@ function PlotGraph(year, type) { // function for slider to change years and betw
             }
         })
 
-        // set the color (chromatic)
+        /* set the color (chromatic), used from d3 graph gallery 
+        options from https://bl.ocks.org/pstuffa/3393ff2711a53975040077b7453781a9*/
         var color = d3.scaleOrdinal()
             .domain(keys)
             .range(d3.schemeDark2);
+
+        /* Used concept from d3 graph gallery for pie chart, 
+        but data type for buttons are different. Added tooltips, legends and 
+        other components to the function https://www.d3-graph-gallery.com/graph/pie_changeData.html */
 
         // function to update graph when variable changes
         function update(data) {

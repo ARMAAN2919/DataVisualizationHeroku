@@ -6,6 +6,7 @@ function PlotGraph(rowData) { // function for changing area using option
   height = 500
   margin = 40
 
+  // equation used from d3 graph gallery
   var radius = Math.min(width, height) / 2 - margin
 
   var svg = d3.select("#q_working_age")
@@ -21,6 +22,8 @@ function PlotGraph(rowData) { // function for changing area using option
     data[key] = rowData[parseInt(key)]; // parse it as integers
   })
 
+  /* used from firstlang.js pie chart */
+  
   var color = d3.scaleOrdinal()
     .domain(data)
     .range(d3.schemeCategory10);
@@ -29,6 +32,9 @@ function PlotGraph(rowData) { // function for changing area using option
     .value(function (d) { return d.value; })
 
   var finalData = pie(d3.entries(data))
+
+/* concept from d3 graph gallery, lines 39-84.
+Tooltips, and some adaptions have been added https://www.d3-graph-gallery.com/graph/pie_annotation.html */
 
   // to build the arc
   var arcGenerator = d3.arc()
@@ -102,7 +108,7 @@ d3.csv("static/datasets/Qualifications-of-working-age-NVQ-AllAge.csv", function 
   })
   $('#area').change(function () {
     var area = $('#area').val();
-    PlotGraph(dataRows[area]);
+    PlotGraph(dataRows[area]); // to plot graph from just area, adapted from learning about functions and options throughout the project
   })
   PlotGraph(firstGraph);
 })

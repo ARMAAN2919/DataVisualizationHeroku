@@ -51,6 +51,9 @@ function PlotGraph(year) { // function for slider to change years
 
         data = data.slice(1, 33); // need only boroughs 
 
+        /* Source code adapted from d3 graph gallery, for own purposes.
+        Added tooltips. Lines 57-154 https://www.d3-graph-gallery.com/graph/circular_barplot_double.html */
+
         var x = d3.scaleBand()
             .range([0, 2 * Math.PI])
             .domain(data.map(function (d) { return d.Area; }));
@@ -150,7 +153,7 @@ function PlotGraph(year) { // function for slider to change years
             .style("font-size", "12px")
             .attr("alignment-baseline", "middle")
 
-        // simple legend for the values
+        // simple legend for the values learnt from d3 graph gallery https://www.d3-graph-gallery.com/graph/custom_legend.html
         svg.append("circle").attr("cx", 210).attr("cy", -350).attr("r", 6).style("fill", "#3D155F")
         svg.append("circle").attr("cx", 210).attr("cy", -330).attr("r", 6).style("fill", "#DF678C")
         svg.append("text").attr("x", 230).attr("y", -350).text([yColumn]).style("font-size", "15px").attr("alignment-baseline", "middle")

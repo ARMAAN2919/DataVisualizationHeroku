@@ -15,6 +15,7 @@ body {
   font-size: 10px;
   padding-right: 10px;
 }
+/* some styles for nav bar and header has been used from a tutorial */
 
 header {
     background: #fff;
@@ -110,11 +111,71 @@ h1 {
     padding-right: 10px;
 }
 
-.about {
-    /* text-align: right; */
-    /* padding-right: 300px; */
-    /* padding-top: -300px; */
-    /* padding-bottom: -500px */
+.description-gcse {
+    /* text-align: justify; */
+    width: 400px;
+    float: right;
+    font-size: 13px;
+    padding-right: 10px;
+    padding-top: 300px;
+    font-family: Cambria, Georgia, serif;
+    /* padding-bottom: 500px */
+}
+
+.description-fl {
+  /* text-align: justify; */
+  width: 750px;
+  float: right;
+  font-size: 12px;
+  padding-right: 250px;
+  padding-top: 250px;
+  font-family: Cambria, Georgia, serif;
+  /* padding-bottom: 500px */
+}
+
+.description-ks {
+  /* text-align: justify; */
+  width: 920px;
+  float: right;
+  font-size: 12px;
+  padding-right: 15px;
+  padding-top: 10px;
+  font-family: Cambria, Georgia, serif;
+  /* padding-bottom: 500px */
+}
+
+.description-i {
+  /* text-align: justify; */
+  /* width: 920px; */
+  /* float: right; */
+  /* float: inherit; */
+  font-size: 20px;
+  /* padding-right: 15px; */
+  padding-top: 10px;
+  font-family: Cambria, Georgia, serif;
+  /* padding-bottom: 500px */
+}
+
+.description-edu {
+  /* text-align: justify; */
+  width: 500px;
+  float: right;
+  font-size: 15px;
+  padding-right: 20px;
+  padding-top: 400px;
+  font-family: Cambria, Georgia, serif;
+  /* padding-bottom: 500px */
+}
+
+.description-nvq {
+  /* text-align: justify; */
+  width: 750px;
+  float: right;
+  font-size: 15px;
+  padding-right: 50px;
+  padding-top: 200px;
+  font-family: Cambria, Georgia, serif;
+  /* padding-bottom: 500px */
 }
 
 .nav-pills {
@@ -124,6 +185,8 @@ h1 {
     /* float: left;  */
     padding: 10px 0;
 }
+
+/* styles used from london-borough github repository. */
 
 /* geo map */
 
@@ -158,6 +221,8 @@ h1 {
     fill: #9e9ac8
   } */
 
+/* tooltip styling adapted from Xavier Polo on jsfiddle http://jsfiddle.net/xavipolo/aCqLm/ */
+
 #tooltip {
   position: absolute;
   width: 0px;
@@ -188,6 +253,8 @@ h1 {
 .legend-container {
 z-index: 1000;
 }
+
+/* Taken from Blocks by Romain Vuillemont */
 
 .line {
     fill: none;

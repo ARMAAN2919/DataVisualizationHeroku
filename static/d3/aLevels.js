@@ -5,13 +5,18 @@ function PlotGraph(year) { // function to change years
     var divId = '#chart-' + year // each year has its own div
     var yColumn = 'Average Level 3 QCDA Point Score Per Entry; All Students'; // value to be shown when hovering geo graph
 
+    /* Components (outlines) used from london-borough github repository. 
+    Between lines 14-57, majority of the code has been appended to match my objective,
+    plus additional code implemented. Code to create the dimension of the map has been unchanged
+    https://github.com/gitbush/london-boroughs */
+
     // to load data and geoJson file for the map
     queue()
         .defer(d3.csv, fileUrl)
         .defer(d3.json, "static/datasets/boroughsGeo.json") // sourced file into project
         .await(createGeo); // to put data into the creation function
 
-    function createGeo(error, alevelCsv, geoJson) {
+    function createGeo(error, alevelCsv, geoJson) { // geoJson file is retrieved from london-borough github repository
 
         alevelCsv.forEach(function (d) {
             d.Area = String(d.Area);
@@ -108,6 +113,12 @@ function PlotGraph(year) { // function to change years
                     horizontalGraph(additionalData); // calling the function 
                 })
             })
+
+        /* Components (outlines) used from london-borough github repository. 
+        Between lines 123-180, code for the legend of the map has been used. Color has been changed 
+        to match the graph color. Little additional information such as id has been added to code
+        so that it works with the interactions I have developed. */
+
         // for legend
         alevelmap.on("pretransition", function (chart) {
             var colorList = colorbrewer.Purples[9];
@@ -169,36 +180,41 @@ function PlotGraph(year) { // function to change years
                 .call(yAxis);
         });
     }
+    
+    /* Horizontal bar graph developed from a sample Block created by 
+    Hannah Recht, lines 221-290. Changed minor functionalities. Using own data, but tested initially 
+    with dummy data to understand the format used in the Block. https://bl.ocks.org/hrecht/f84012ee860cb4da66331f18d588eee3 */
+
     // addtional graph below to display more data 
     function horizontalGraph(data) {
         // testing with dummy data
         /*var data = [{ 
-            "name": "Apples",
-            "value": 20,
+            "name": "A",
+            "value": 13,
         },
         {
-            "name": "Bananas",
-            "value": 12,
+            "name": "B",
+            "value": 23,
         },
         {
-            "name": "Grapes",
-            "value": 19,
+            "name": "C",
+            "value": 15,
         },
         {
-            "name": "Lemons",
-            "value": 5,
+            "name": "D",
+            "value": 17,
         },
         {
-            "name": "Limes",
-            "value": 16,
+            "name": "E",
+            "value": 6,
         },
         {
-            "name": "Oranges",
-            "value": 26,
+            "name": "F",
+            "value": 22,
         },
         {
-            "name": "Pears",
-            "value": 30,
+            "name": "F",
+            "value": 28,
         }]; */
 
         // sorting barchart based on ascending value

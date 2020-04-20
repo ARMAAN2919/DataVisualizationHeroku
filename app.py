@@ -13,9 +13,9 @@ def results():
 def education():
     return render_template('education.html')
 
-@app.route("/gsce")
+@app.route("/gcse")
 def schools():
-    return render_template('gsce.html')
+    return render_template('gcse.html')
 
 @app.route("/language")
 def language():

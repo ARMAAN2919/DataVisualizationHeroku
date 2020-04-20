@@ -8,6 +8,10 @@ var svg = d3.select("body").append("svg")
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+/*Concept taken from Blocks by Romain Vuillemont, all code has been adapted.
+Mainly just the tooltip interaction is the most similar
+http://bl.ocks.org/romsson/f205420d21ced66810058d4cdf25c6dd/bde5fc56d3fa8a05852e108e6bffb1aa09734589 */
+
 var parseDate = d3.timeParse("%Y"); // convert year to the correct form
 
 var x = d3.scaleTime()

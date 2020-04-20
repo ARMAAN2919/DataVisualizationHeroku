@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Using slick slider to change years  -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+
+  <script type="text/javascript" src="../static/d3/d3.v4.js"></script>
+  <title>GCSE Results</title>
+
+
+</head>
+
+<body>
+
+  <header>
+    <!-- nav bar adapted from bootstrap documentation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+      <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapse_target">
+
+        <a class="navbar-brand" href="/"> <img src="../static/assets/EduLogo.png" alt="logo" class="logo"></a>
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="aLevels">ALevels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gcse">GCSE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="keystage">KeyStage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="language">Language</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="international">International</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workingage">NVQ4+</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="education">Education</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <div class="text">
+    <h1>GCSE Results in London</h1>
+  </div>
+
+<aside>
+  <div class="description-gcse">
+    <p align="justify">This graph is exhibiting information on three different factors related to a GCSE qualification. The percentage
+      of pupils who have achieved a standard pass is compared to the percentage of students enrolled in the program.
+      The average Attainment 8 score per pupil is noticeable as dots on the graph; this score is for the whole school
+      and not only GCSE students. You can also sort the information by gender, and switch the year you would like to
+      visualize.
+    </p>
+  </div>
+</aside>
+  <!-- <div class="graph1">
+  </div> -->
+
+  <!-- select tag learnt from w3 -->
+
+  Select Gender
+  <select id="gender">
+    <option value="All" selected="selected">All</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+  </select>
+
+  <!-- carousel learnt from Slick -->
+
+  <div class="slick-carousel">
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2015</p>
+      </div>
+      <div id="chart-2015"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2016</p>
+      </div>
+      <div id="chart-2016"></div>
+    </div>
+
+    <div class="slider">
+      <div style="text-align: center;">
+        <p class="text-lg-left">2017</p>
+      </div>
+      <div id="chart-2017"></div>
+    </div>
+
+  </div>
+
+  <!-- Using slick slider to change years  -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript" src="../static/d3/gcse.js"></script>
+
+  <!-- Select year: 
+    <select id="year"></select> -->
+
+</body>
+
+</html>

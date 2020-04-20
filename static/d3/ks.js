@@ -29,6 +29,9 @@ function PlotGraph(year, type) { // function for slider to change years and chan
     .domain([0, 1])
     .range([height, 0]);
 
+/* Learning how to set individual bars from Blocks
+by kalnar's, lines 37-58 https://bl.ocks.org/kalnar/5547c0279331b9b2b1bb00b9f880dd35 */
+
   // for each variable (bar) x0,x1,x2,x3
   // takes care of the positioning the bars on the x and y axis
   var x0 = d3.scaleBand() // set domain later
@@ -128,6 +131,11 @@ function PlotGraph(year, type) { // function for slider to change years and chan
       }
     
     }); */
+
+    /* As the gcse.js graph has been constructed first
+    the concept to plot and fill each individual bar is taken
+    from that stacked bar graph. Also tooltips, legends and 
+    other features. All adapted to work with grouped bar graph */
 
     svg.append("g")
       .attr("class", "x axis")
